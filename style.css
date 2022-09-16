@@ -1,0 +1,58 @@
+body{
+	height: 100%;
+	width :	100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0;
+	background-color: #ccc;
+}
+#game_area{
+	width: 100vmin;
+	height: 100vmin;
+	background-color: #EEE4DA;
+	display: grid;
+	grid-template-rows: repeat(21,1fr); 
+	grid-template-columns: repeat(21,1fr); 
+}
+.snake{
+	background-color: #C19A6B;
+	border: .25vmin;
+}
+.healthyfood{
+	background-color: #9ACD32;
+	border: .25vmin;
+}
+.junkfood{
+	background-color: #E62737;
+	border: .25vmin;
+}
+#start, #gameover{
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	color :#776E65;  
+	padding: 20px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -100px;
+    margin-left: -100px;
+    height:200px;
+    width:250px;
+    text-align: center;
+	
+}
+#start a, #game-over a {
+    border: 3px solid #776E65;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 15px;
+    cursor: pointer;
+    display: block;
+    width: 200px;
+    text-align: center;
+    font-size:2em;
+    display: inline-block;
+}
+
+#start a:hover, #game-over a:hover { background-color: #ffffff; color: #1bafdb; }
